@@ -24,11 +24,11 @@ A lightweight Node.js + Express.js backend that simulates AI-powered data query 
 ## Setup
 1. Clone the repository:
    ```
-   git clone <repo_url>
+   git clone <https://github.com/DiptanshuVishwa/mini-query-engine>
    ```
 2. Install dependencies:
    ```
-   npm install
+   npm install express sqlite3 dotenv body-parser
    ```
 3. Run the server:
    ```
@@ -39,7 +39,7 @@ A lightweight Node.js + Express.js backend that simulates AI-powered data query 
 ## API Endpoints
 - **POST /query**  
   - Request: `{ "naturalQuery": "Show total sales in Q1 2024." }`
-  - Headers: `{ "x-api-key": "your_secret_key" }`
+  - Headers: `{ "x-api-key": "ae2cf5ee59ea362424c039aa4e0c472041b07d1e9f6212554136fe124944c71f" }`
   - Response: `{ "query": "SELECT SUM(amount) FROM sales WHERE quarter = 'Q1 2024'", "result": {...} }`
 
 - **POST /explain**  
