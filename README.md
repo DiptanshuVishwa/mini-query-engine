@@ -20,7 +20,7 @@ A lightweight Node.js + Express.js backend that simulates AI-powered data query 
 /validate → Checks if the query is valid
 
 🎯 How to Use: Clone, Install, Run!
-💡 Deployed API: [Your Render URL]
+💡 Deployed API: [[Render URL](https://mini-query-engine-e2lg.onrender.com)]
 ## Setup
 1. Clone the repository:
    ```
