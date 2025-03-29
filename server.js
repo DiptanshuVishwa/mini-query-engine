@@ -52,6 +52,10 @@ const convertToSQL = (query) => {
     return "Unsupported query";
 };
 
+app.get('/', (req, res) => {
+    res.send("Mini Query Engine API is running! Use /query, /explain, or /validate endpoints.");
+});
+
 app.post("/query", authenticate, (req, res) => {
     const { naturalQuery } = req.body; 
     const sqlQuery = convertToSQL(naturalQuery);
